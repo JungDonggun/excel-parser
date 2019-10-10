@@ -1,0 +1,40 @@
+{
+<<<<<<< HEAD
+	"name": "excel-parser",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"start": "babel-node ./bin/www",
+		"dev": "nodemon --exec babel-node ./bin/www"
+	},
+	"dependencies": {
+		"cookie-parser": "~1.4.4",
+		"debug": "~2.6.9",
+		"ejs": "~2.6.1",
+		"express": "~4.16.1",
+		"http-errors": "~1.6.3",
+		"morgan": "~1.9.1",
+		"xlsx": "^0.15.1"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"nodemon": "^1.19.3"
+	}
+=======
+  "name": "excel-parser",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1"
+  }
+>>>>>>> f72768b91a0fb5fc5f61fb8ca2c8d7fa1f59018f
+}

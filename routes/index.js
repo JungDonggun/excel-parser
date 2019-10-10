@@ -11,14 +11,12 @@ router.get('/', function(req, res, next) {
 });
 
 router.post('/demo', function(req, res, next) {
-  const workbook = excelParser('public/excel/dummy4(best).xls')
+  const workbook = excelParser('public/excel/dummy6(test).xlsx')
+  
   let worksheetIndex = workbook.SheetNames
+  let workSheetData = worksheetIndex.map(name => workbook.Sheets[name])
 
-  return new Promise((resolve, reject) => {
-    worksheetIndex.map(name => {
-      resolve(workbook.Sheets[name])
-    })
-  }).then(sheetData => {
+  Promise.all(workSheetData).then(sheetData => {
     res.status(200).json({ sheetData })
   })
 });

@@ -1,10 +1,10 @@
-import express from 'express'
+import { Router } from 'express'
 import { excelParser } from '../customModules/parser'
-const router = express.Router()
+const router = Router()
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  const parser = excelParser('public/')
+  const parser = excelParser('public/excel/dummy2.xlsx')
 
   res.send(parser)
 });
